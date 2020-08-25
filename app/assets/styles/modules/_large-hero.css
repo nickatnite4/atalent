@@ -1,0 +1,18 @@
+.large-hero {
+    border-bottom: 5px solid $mainRed;
+    position: relative;
+
+    &__image {
+        display: block;
+        opacity: 0.85;
+    }
+
+    &__btn-content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+}

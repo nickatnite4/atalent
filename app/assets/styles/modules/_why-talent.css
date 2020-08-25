@@ -1,0 +1,42 @@
+.why-talent {
+
+
+    &__title {
+        text-align: left;
+        font-weight: 650;
+        font-size: 1.125rem;
+
+        @mixin atMedium {
+            font-size: 2.375rem;
+        }
+    }
+
+    &__points {
+        font-weight: 300;
+        line-height: 1.5;
+        letter-spacing: 1.5px;
+
+        p {
+            margin-top: 3rem;
+            
+            @mixin atMedium {
+                padding-top: 1.5rem;
+            }
+        }
+
+        @mixin atSmall {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__bottom-border {
+        border-bottom: 3px solid #3f3e3e;
+        width: 37.5%;
+
+        &--title {
+            border-bottom: 8px solid #3f3e3e;
+            width: 37%;
+        }
+    }
+
+}

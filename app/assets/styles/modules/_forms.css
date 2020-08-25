@@ -1,0 +1,49 @@
+.forms {
+    max-width: 850px;
+    margin: auto;
+    input, select {
+        width: 100%;
+        padding: 12px 10px;
+        margin: 10px 0;
+        display: inline-block;
+        border: 1px solid #383838;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    ::placeholder {
+        letter-spacing: 2px;
+    }
+
+    &--container {
+        margin: auto;
+        max-width: 750px; 
+    }
+
+    &--spacing {
+
+        @mixin atMedium {
+            margin-right: 20px;
+        }
+    }
+
+    &__upload {
+        width: 300px;
+        border-radius: 6px;
+
+        &--content {
+            transform: translateY(25%);
+            margin-left: 10px;
+        }
+
+        &--requirements {
+            p {
+                letter-spacing: 1.25px;
+                color: #808080;
+                font-size: 0.75rem;
+            }
+            
+        }
+    }
+    
+}

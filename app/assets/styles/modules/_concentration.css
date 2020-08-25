@@ -1,0 +1,56 @@
+.concentration {
+    background-color: $mainRed;
+    padding-bottom: 30px;
+
+    &__title {
+        color: #FFF;
+        font-weight: 300;
+        margin-bottom: 0;
+        font-size: 3rem;
+
+        @mixin atMedium {
+            font-size: 3rem;
+        }
+
+        &--border-bottom {
+            border-bottom: 8px solid #FFF;
+            margin-bottom: 3.125rem;
+            max-width: 100px;
+            
+            @mixin atMedium {
+                max-width: 125px;
+            }
+        }
+    }
+
+    &__subjects {
+        background-color: #969595;
+        padding: 8px 0;
+        color: #FFF;
+        border-radius: 6px;
+        margin-bottom: 4rem;
+
+        @mixin atSmall {
+            padding: 20px 0;
+        }
+
+        img {
+            padding-left: 20px;
+        }
+
+        h2 {
+            position: absolute;
+            display: inline;
+            padding-left: 2rem;
+            transform: translateY(-10%);
+            font-size: 1.625rem;
+            font-weight: 300;
+            letter-spacing: 1.5px;
+
+            @mixin atSmall {
+                font-size: 2.5rem;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

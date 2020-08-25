@@ -1,0 +1,57 @@
+.footer {
+    border-top: 8px solid $mainRed;
+
+    &__margin {
+        margin-top: 1.0rem;
+    }
+
+    &__contact-info {
+        position: relative;
+    }
+
+    &__contact {
+        margin-top: 0.75rem;
+        text-align: center;
+        p {
+            display: inline;
+            color: $mainRed;
+            padding-left: 0.75rem;
+            letter-spacing: 1.125px;
+            font-size: 0.875rem;
+
+            @mixin atSmall {
+                display: inline;
+            }
+        }   
+    }
+
+    &__image {
+        text-align: center;
+    }
+
+    &__small {
+        color: $mainRed;
+        font-size: 0.75rem;
+        text-align: center;
+        letter-spacing: 0.75px;
+        margin-top: 3rem;
+    }
+
+    &__links {
+        margin-top: 0.125rem;
+        text-align: center;
+    
+        a {
+            text-decoration: none;
+            color: $mainRed;
+            margin: 0 .25rem;
+            font-size: .75rem;
+            
+            @mixin atSmall {
+                margin: 0 .5rem;
+                font-size: 1.125rem;
+            }
+        }
+    }
+    @mixin clearfix;
+}

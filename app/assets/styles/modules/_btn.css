@@ -1,0 +1,63 @@
+.btn {
+    &--home {
+        text-decoration: none;
+        color: #FFF;
+        background-color: rgba($mainRed, .70);
+        padding: 0.625rem 2rem;
+        border-radius: 37.5px;
+        font-size: 1.15rem;
+
+        @mixin atSmall {
+            padding: 0.875rem 2.5rem;
+            font-size: 1.375rem;
+        }
+
+        @mixin atMedium {
+            padding: 1.125rem 4.5rem;
+            border-radius: 37.5px;
+            font-size: 1.75rem;
+        }
+    }
+
+    &--margin {
+        margin-top: 1.5rem;
+
+        @mixin atSmall {
+            margin-top: 3rem;
+        }
+
+        @mixin atMedium {
+            margin-top: 2.5rem;
+        }
+    }
+
+    &--white-background {
+        a {
+            text-decoration: none;
+            color: $mainRed;
+        }
+        max-width: 950px;
+        font-size: 1.875rem;
+        border: 1px solid $mainRed;
+        padding: 0.625rem 1.25rem; 
+        text-align: center;
+        margin: auto;
+        margin-top: 2.5rem;
+
+        @mixin atMedium {
+            margin-top: 4rem;
+        }
+    }
+
+    &--form-button {
+        text-decoration: none;
+        background-color: $mainRed;
+        border: none;
+        width: 100%;
+        color: #FFF;
+        padding: 12px 0;
+        border-radius: 6px;
+        font-size: 1.3rem;
+    }
+    
+}

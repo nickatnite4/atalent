@@ -1,0 +1,69 @@
+.about-us-hero {
+    position: relative;
+
+    &__image {
+        display: block;
+        opacity: 0.85;
+    }
+
+    &__text-content { 
+        max-width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        color: #FFF;
+        text-align: left;
+        
+        @mixin atMedium {
+            max-width: 500px;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 3.5rem;
+        font-weight: 100;
+
+        @mixin atSmall {
+            margin-left:50px;
+        }
+    }
+
+    &__subtitle {
+        text-align: center;
+        font-weight: 100;
+        font-size: 1.25rem;
+        letter-spacing: 3px;
+
+        @mixin atSmall {
+            margin-left: 50px;
+        }
+    }
+
+    &__background {
+        background-color: rgba(56, 56, 56, 0.75);
+        height: 100%;
+        right: 0;
+    }
+
+    &__section-title {
+        font-size: 2.5rem;
+        font-weight: 100;
+    }
+
+    &__section-content {
+        letter-spacing: 1.25px;
+        line-height: 1.5;
+        margin-bottom: 4rem;
+    }
+
+    &__content {
+        max-width: 1000px;
+        margin-top: 3rem;
+
+        @mixin atMedium {
+            font-size: 1.125rem;
+        }
+    }
+}

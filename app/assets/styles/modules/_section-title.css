@@ -1,0 +1,21 @@
+.section-title {
+    text-align: center;
+    font-size: 2.75rem;
+    font-weight: 100;
+
+    @mixin atSmall {
+        margin-left:50px;
+        font-size: 3.5rem;
+    }
+
+    &--contact-us {
+        p {
+            text-align: center;
+            letter-spacing: 1.50px;
+        }
+
+        strong {
+            color: $mainRed;
+        }
+    }
+}
